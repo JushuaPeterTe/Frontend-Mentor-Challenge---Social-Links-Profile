@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    /* Primary */
+    --Green: hsl(75, 94%, 57%);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+}
+
+html {
+    color: var(--White);
+    font-family: 'Inter';
+    padding: 50px 0px;
+}
+
+body {
+    background-color: var(--Off-Black);
+}
+
+p {
+    font-size: 14px;
+}
+
+.main-content {
+    display: flex;
+    height: 100vh;
+}
+
+.sub-content {
+    margin: auto;
+}
+
+.content {
+    background-color: var(--Dark-Grey);
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding: 30px;
+    width: 290px;
+}
+
+.content img {
+    border-radius: 100%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 35px;
+    width: 30%;
+}
+
+.content .name,
+.content .home-address,
+.content .career-name {
+    display: flex;
+    font-family: 'Inter';
+    line-height: 10px;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.content .home-address {
+    color: var(--Green);
+}
+
+.content .career-name {
+    font-size: 13px;
+    padding: 10px 0px;
+}
+
+.buttons {
+    /* border: solid; */
+    text-align: center;
+}
+
+.buttons a {
+    color: var(--White);
+    text-decoration: none;
+}
+
+.button {
+    margin-top: 16px;
+}
+
+.buttons .button {
+    background-color: var(--Grey);
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 13px 0px;
+    transition: .3s;
+}
+
+.buttons .button:hover {
+    background-color: var(--Green);
+    color: var(--Grey);
+}
